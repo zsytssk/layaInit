@@ -27,3 +27,6 @@ broadcast:> 全局传递
 -> ctrl直接调用model的方法
 -> ctrl onModel 监听model分发事件来改变页面...
 所有的数据只有一个入口room:> Game
+-> ctrl只和对应的model交互, 比如其他的ctrl要在model变化是触发相应的方法
+可以通过bindOtherEvent绑定model对应的ctrl事件
+model:>ctrl:>otherCtrl
